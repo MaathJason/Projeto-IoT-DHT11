@@ -123,16 +123,17 @@
         .container{
             display:flex;
             justify-content:center;
-            margin-top:200px;
+            margin-top:150px;
         }
         .containercenter{
-            width:400px;
+            width:500px;
             height:325px;
             background-color:#f0f0f0;
             display:flex;
             justify-content:center;
             padding:20px;
             align-items:center;
+            border-radius:8px;
         }
         .containercenter p,h2 {
             justify-content:center;
@@ -146,29 +147,28 @@
         <div class="containercenter">
             <div class="text">
                 <h2>Leitura do Sensor DHT11</h2>
-                <p>Temperatura: 
+                <p>🌡️ Temperatura: 
                     <?php echo $temp;?>°C
                 </p>
-                <p>Umidade: 
+                <p>💧 Umidade: 
                     <?php echo $umid; ?>%
                 </p>
-                <p>Data/Hora de Verificação:
+                <p>📅 Data/Hora de Verificação:
                     <?php date_default_timezone_set('America/Sao_Paulo'); ?> -->
                     <?php echo date ('d/m/Y H:i:s'); ?>
                 </p>
-                <p>Maior Temperatura:
+                <p>🥵 Maior Temperatura:
                     <?php echo $maiorTemp . " °C ás " . $maiorDataHora; ?>
                 </p>
-                <p>Menor Temperatura:
+                <p>🥶 Menor Temperatura:
                     <?php echo $menorTemp . " °C ás " . $menorDataHora; ?>
                 </p>
-                <p>Menor Umidade: 
+                <p>⬇️💧 Menor Umidade: 
                     <?php echo $menorUmidade . " % ás " . $menorUmidadeDataHora;?>
                 </p>
-                <p>Maior Umidade:
+                <p>⬆️💧 Maior Umidade:
                     <?php echo $maiorUmidade . " % ás " . $maiorUmidadeDataHora;?>
                 </p>
-
             </div>
         </div>
     </div>
